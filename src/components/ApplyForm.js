@@ -116,7 +116,7 @@ function ApplyForm() {
             placeholder="https://project.org/docs"
             onChange={handleSetUrl}
           />
-        </LabelText>
+        </label>
 
         <Text small={true} className="uil-pv-8 uil-d-block apply-text">
           We'll scrape pages at this address and index the content on Algolia.
@@ -139,7 +139,7 @@ function ApplyForm() {
             placeholder="you@project.org"
             onChange={handleSetEmail}
           />
-        </LabelText>
+        </label>
 
         <Text small={true} className="uil-pv-8 uil-d-block apply-text">
           We'll send you the snippet you'll have to integrate into your website
