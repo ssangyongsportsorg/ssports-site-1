@@ -62,7 +62,7 @@ function ApplyForm() {
 
   if (state.status === 'succeed' && state.message) {
     return (
-      <Card className="uil-m-auto uil-ta-center apply-form">
+      <div className="uil-m-auto uil-ta-center apply-form">
         <Heading1 className="apply-text">Thank you!</Heading1>
         <br />
 
@@ -92,7 +92,7 @@ function ApplyForm() {
             </Text>
           </>
         )}
-      </Card>
+      </div>
     );
   }
 
