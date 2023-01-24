@@ -5,23 +5,7 @@ import ReactiveButton from 'reactive-button';
 
 
 function Form() {
-  if (!success) {
-          return setState({
-            status: 'failed',
-            message: 'Unable to submit your request.',
-          });
-        }
-
-        return setState({ status: 'succeed', message });
-      })
-      .catch(() =>
-        setState({
-          status: 'failed',
-          message: 'Unable to submit your request.',
-        })
-      );
-  };
-
+  
   if (state.status === 'succeed' && state.message) {
     return (
       <Card className="uil-m-auto uil-ta-center apply-form">
@@ -107,7 +91,7 @@ function Form() {
               </p>
               <p>
                       <a href="https://github.com/">
-                    <ReactiveButton disabled={state.status === 'loading'} type={'submit'} idleText="Submit" />
+                    <ReactiveButton disabled={state.status === 'succed'} type={'submit'} idleText="Submit" />
                      </a>
 
               </p>
