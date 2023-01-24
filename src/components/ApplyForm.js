@@ -255,7 +255,7 @@ function ApplyForm() {
           </strong>{' '}
         </Text>
       </form>
-    </Card>
+    </div>
   );
 }
 
