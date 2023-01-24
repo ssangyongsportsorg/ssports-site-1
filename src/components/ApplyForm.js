@@ -236,8 +236,7 @@ function ApplyForm() {
         </div>
 
         
-            .
-          </strong>{' '}
+     
         </Text>
       </form>
     </div>
