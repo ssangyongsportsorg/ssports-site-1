@@ -97,7 +97,7 @@ function ApplyForm() {
   }
 
   return (
-    <Card className="uil-m-auto apply-form uil-pb-24">
+    <div className="uil-m-auto apply-form uil-pb-24">
       <form
         id="form-apply-docsearch"
         method="POST"
