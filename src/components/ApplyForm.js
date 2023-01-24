@@ -237,7 +237,6 @@ function ApplyForm() {
 
         
      
-        </Text>
       </form>
     </div>
   );
