@@ -104,7 +104,7 @@ function ApplyForm() {
         action="https://docsearch-hub.herokuapp.com/form/inbound"
         onSubmit={onSubmit}
       >
-        <LabelText key="url" tag="label" htmlFor="url" className="apply-text">
+        <label key="url" tag="label" htmlFor="url" className="apply-text">
           Documentation or Blog URL
           <Input
             required={true}
@@ -122,7 +122,7 @@ function ApplyForm() {
           We'll scrape pages at this address and index the content on Algolia.
         </Text>
 
-        <LabelText
+        <label
           tag="label"
           htmlFor="email"
           key="email"
@@ -146,7 +146,7 @@ function ApplyForm() {
           and grant access to your Algolia application.
         </Text>
 
-        <LabelText
+        <label
           tag="label"
           htmlFor="repoURL"
           key="repoURL"
@@ -163,14 +163,14 @@ function ApplyForm() {
             placeholder="https://github.com/algolia/docsearch, https://gitlab.com/gitlab-org/gitlab, etc..."
             onChange={handleSetRepo}
           />
-        </LabelText>
+        </label>
 
         <Text small={true} className="uil-pv-8 uil-d-block apply-text">
           We will use this link to determine if your project is open-source.
         </Text>
 
         <div className="uil-ph-32 uil-d-flex uil-fxd-column">
-          <LabelText
+          <label
             className="uil-pt-12 apply-text"
             tag="label"
             htmlFor="public"
@@ -185,9 +185,9 @@ function ApplyForm() {
               className="uil-mr-8"
             />
             My website is publicly available
-          </LabelText>
+          </label>
 
-          <LabelText
+          <label
             className="uil-pt-12 apply-text"
             tag="label"
             htmlFor="opensource"
@@ -203,9 +203,9 @@ function ApplyForm() {
             />
             My website is a technical documentation of an open-source project or
             a technical blog
-          </LabelText>
+          </label>
 
-          <LabelText
+          <label
             className="uil-pt-12 apply-text"
             tag="label"
             htmlFor="owner"
@@ -220,10 +220,8 @@ function ApplyForm() {
               className="uil-mr-8"
             />
             I'm the owner of the website and I have{' '}
-            <InlineLink href={withBaseUrl('docs/who-can-apply')}>
-              read the checklist
-            </InlineLink>
-          </LabelText>
+         
+          </label>
 
           <Button
             primary={true}
@@ -237,20 +235,7 @@ function ApplyForm() {
           </Button>
         </div>
 
-        <Text small={true} className="uil-ta-center">
-          <InlineLink href="https://www.algolia.com/policies/terms">
-            Refer to Algolia's Privacy Policy for more information on how we use
-            and protect your data
-          </InlineLink>
-        </Text>
-
-        <Text small={true} className="uil-ta-center">
-          <strong>
-            Only apply if you don't have a DocSearch application yet. <br />
-            For support requests, make sure to first{' '}
-            <InlineLink href="/docs/DocSearch-program#support">
-              read our policy
-            </InlineLink>
+        
             .
           </strong>{' '}
         </Text>
